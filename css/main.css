@@ -1,0 +1,914 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+    .pink{
+        color: #D7304D;
+    }
+    .pink:hover{
+        color: #fff;
+    }
+    .blank{
+        color: #fff;
+    }
+    @font-face{
+        font-family: 'VarelaRound';
+        src: url(/css/fonts/VarelaRound-Regular.otf);
+    }
+    @font-face{
+        font-family: 'Roboto';
+        src: url(/css/fonts/Roboto-Regular.ttf);
+    }
+    *{
+         
+        box-sizing: border-box;
+        font-family: 'VarelaRound','Roboto', sans-serif;
+    }
+    html, body{
+        padding: 0;
+        margin:0;
+        width: 100%;
+        height: 100%;
+    }
+    body#home{
+        background: url(/img/home-landing.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    body#artists{
+        background: url(/img/home-text.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+      
+    header{
+        height: 100px;
+        background-color: transparent;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .logotype{
+        width: 28%;
+        height: 88px;
+        float: left;
+        padding: 8px;
+        margin-left: 18px;
+        margin-top: 8px;
+        display: grid;
+        grid-template-columns: 60px auto;
+        grid-template-rows: 60px;
+    }
+    .logotype a{
+        text-decoration: none;
+        font-size: 38px;
+        letter-spacing: -3px;
+        font-weight: 800;
+        float: right;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
+        margin-right: 2px;
+      }
+      .logo div {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 20%;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        mix-blend-mode: multiply;
+        -webkit-animation: 2s cubic-bezier(0.66, -0.7, 0.27, 1.6) infinite;
+                animation: 2s cubic-bezier(0.66, -0.7, 0.27, 1.6) infinite;
+                
+      }
+      .logo div:nth-child(1) {
+        background-color: #f4537d;
+        -webkit-animation-name: rotate-1;
+                animation-name: rotate-1;
+      }
+      .logo div:nth-child(2) {
+        background-color: #ddebf4;
+        -webkit-animation-name: rotate-2;
+                animation-name: rotate-2;
+      }
+      .logo div:nth-child(3) {
+        background-color: #f1369a;
+        -webkit-animation-name: rotate-3;
+                animation-name: rotate-3;
+      }
+      .logo div:nth-child(4) {
+        background: url(/img/logo.png) ;
+        background-size:contain;
+        background-position-y: 2px;
+      }
+      @-webkit-keyframes rotate-1 {
+        to {
+          -webkit-transform: rotate(135deg);
+                  transform: rotate(135deg);
+        }
+      }
+      @keyframes rotate-1 {
+        to {
+          -webkit-transform: rotate(135deg);
+                  transform: rotate(135deg);
+        }
+      }
+      @-webkit-keyframes rotate-2 {
+        to {
+          -webkit-transform: rotate(225deg);
+                  transform: rotate(225deg);
+        }
+      }
+      @keyframes rotate-2 {
+        to {
+          -webkit-transform: rotate(225deg);
+                  transform: rotate(225deg);
+        }
+      }
+      @-webkit-keyframes rotate-3 {
+        to {
+          -webkit-transform: rotate(315deg);
+                  transform: rotate(315deg);
+        }
+      }
+      @keyframes rotate-3 {
+        to {
+          -webkit-transform: rotate(315deg);
+                  transform: rotate(315deg);
+        }
+      }
+    .menu{
+        grid-column: 4;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+    }
+    .menu ul{
+        float: right;
+    }
+    .menu ul li{
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+    }
+    .menu ul li:not(:first-child){
+        margin-left: 48px;
+    }
+    .menu ul li:last-child{
+        margin-right: 24px;
+    }
+    .menu ul li a{
+        color:#fff;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+    }
+    .menu ul li a:hover{
+        color: #D7304D;
+        text-decoration: none;
+    } 
+      
+    .menu ul li a:before, .menu ul li a:after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        bottom: -2px;
+        background: #D7304D;
+      }
+      
+    .menu ul li a:before {
+        left: 0;
+    }
+    .menu ul li a:after {
+        right: 0;
+        background: transparent;
+        transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
+      
+    .menu ul li a:hover:before {
+        background: transparent;
+        width: 100%;
+        transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
+      
+    .menu ul li a:hover:after {
+        background: transparent;
+        width: 100%;
+        transition: 0s;
+      }   
+
+    /* Start Home page */
+    
+    @-webkit-keyframes sdb {
+        0% {
+          opacity: 0;
+        }
+        30% {
+          opacity: 1;
+        }
+        60% {
+          box-shadow: 0 0 0 60px rgba(0, 0, 0, 0.1);
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+    }
+    @keyframes sdb {
+        0% {
+          opacity: 0;
+        }
+        30% {
+          opacity: 1;
+        }
+        60% {
+          box-shadow: 0 0 0 60px rgba(0, 0, 0, 0.1);
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    .home-landing{
+        width: 100%;
+        height: 84vh;
+    }
+    .home-content{
+        display: table-cell;
+        position: relative;
+        top: 25%;
+        margin-left: 28px;
+        text-transform: uppercase;
+        float: left;
+        text-align: center;
+    }
+    .home-content h1{
+        padding: 0;
+        margin: 0;
+        font-size: 4.5em;
+        font-weight: 700;
+    }
+    .home-content span{
+        font-family: 'Roboto', sans-serif;
+    }
+    .home-mid-container{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 50% auto;
+        align-self: center;
+        -webkit-clip-path: polygon(100% 16%, 100% 100%, 0 100%, 0 0);
+        clip-path: polygon(100% 16%, 100% 100%, 0 100%, 0 0);
+        background-color: white;
+        /* -webkit-box-shadow: 0 8px 6px -6px inset black;
+	    -moz-box-shadow: 0 8px 6px -6px inset black;
+        box-shadow: 0 8px 13px -7px inset black, 0 -8px 13px -7px inset black; */
+
+    }
+    .home-img-container{      
+        align-self: center;
+        background: url(/img/img1-content.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 80%;
+        height: 80%;
+        margin: 0 20px;
+        -webkit-box-shadow: 0 8px 6px -6px #D7304D;
+	    -moz-box-shadow: 0 8px 6px -6px #D7304D;
+        box-shadow: 0 18px 20px -7px #D7304D, 0 -3px 20px -7px #D7304D;
+    }
+    .home-description-container{
+        align-self: center;
+        margin: 0 60px;
+        justify-content: space;
+        z-index: -10;
+    }
+    .home-text-container{
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 50% auto;
+        background: url(/img/home-text.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position-y: 45%;
+        background-position-x: 100%;
+        align-self: center;
+        font-family: 'Roboto';
+        text-align: justify;
+        -webkit-clip-path: polygon(100% 0, 100% 92%, 0 100%, 0 0);
+        clip-path: polygon(100% 0, 100% 92%, 0 100%, 0 0);
+
+    }
+    .home-text-container section{
+        align-self: center;
+        margin: 0 50px;
+        font-size: 16px;
+        color: #fff;
+    }
+    /* End Home page */
+
+    /* Start Artists page*/
+    .artists-landing, 
+    .artists-landing::after,
+    .artists-landing::before{
+        content: '';
+        width: 100%;
+        height: 60vh;
+        position: relative;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+    }
+    /* .artists-landing{
+        -webkit-clip-path: polygon(50% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
+        clip-path: polygon(50% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
+    
+    } */
+    .artists-landing::before,
+    .artists-landing::after{
+        position: absolute;
+        content: '';
+        width: 50%;
+        height: 152px;
+        z-index: 1;
+        bottom: -14%;
+        background-color: #fff;
+    }
+    .artists-landing::before{
+        right: 50%;
+        transform: skew(0,6deg);
+        box-shadow: 8px 0 24px -8px black;
+    }
+    .artists-landing::after{
+        left: 49.99%;
+        transform: skew(0,-6deg);
+        box-shadow: 8px 0 24px -8px black;
+    }
+    .artists-content{
+        position: relative;
+        grid-column: 2;
+        grid-row: 2;
+        align-self: center;
+        text-align: center;
+    }
+    
+    /* CSS3 Neon Text Effect */
+    .hero-bg.neon-hero .title {
+        cursor:pointer;
+        color: rgba(255, 255, 255, 0);
+        text-shadow: 0em 0em 3em #D7304D,
+                    0em 0em 2em #D7304D,
+                    1px 1px 5px #D7304D,
+                    0px 0px 15px #D7304D,
+                    1px 0px 0px white,
+                    -1px 0px 2px rgba(0, 0, 0, .5);
+    }
+    .hero-bg.neon-hero .title:hover {
+        color: #f4537d;
+        text-shadow: 0em 0em 5em #D7304D,
+                    0em 0em 3em #D7304D,
+                    0em 0em 2em #D7304D,
+                    1px 1px 5px #D7304D,
+                    0px 0px 10px #D7304D,
+                    0px 0px 25px #D7304D,
+                    0px 0px 45px #D7304D,
+                    2px 1px 0px white,
+                    -1px 0px 2px rgba(0, 0, 0, .5);
+    }
+    .hero-bg .title {
+        font-size: 5em;
+        letter-spacing: 0px;
+        color: #ffffff;
+    }
+    .hero-bg .hero-text {
+        justify-content: center;
+        text-align: center;
+    }
+    /* End CSS3 Neon Text Effect */
+
+    /* Start Artists description */
+    .artists-mid-container{
+        max-width: 100%;
+        padding-top: 150px;
+        background-color: #ccc;
+        position: relative;
+        display: grid;
+        margin: 0;
+        left: 0;
+    }
+    
+    .wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .tabs {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 100%;
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    .tabs > li {
+        transition-duration: 0.25s;
+        display: table-cell;
+        list-style: none;
+        text-align: center;
+        padding: 20px 20px 25px 20px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        color: white;
+        font-size: 3em;
+    }
+    .tabs > li:before {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 120%;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.3);
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        transition-duration: 0.25s;
+        border-radius: 5px 5px 0 0;
+    }
+    .tabs > li:hover:before {
+        -webkit-transform: translateY(70%);
+        transform: translateY(70%);
+    }
+    .tabs > li.active {
+        color: #000; 
+        background-color: #D7304D;
+
+    }
+    .tabs > li.active:before {
+        transition-duration: 0.5s;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        color: #000;
+    }
+    .tabs > li:nth-child(1).active{
+        background-color: #2A9BF3;
+    }
+    .tabs > li:nth-child(2).active{
+        background-color: #D7304D;
+    }
+    .tabs > li:nth-child(3).active{
+        background-color: #000;
+        color: white;
+    }
+    
+    .tab__content {
+        background-color: white;
+        position: relative;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .tab__content > li {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        list-style: none;
+    }
+    .tab__content > li .content__wrapper {
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        border-radius: 5px;
+        width: 100%;
+        background-color: white;
+    }
+    .colors {
+        text-align: center;
+        padding-top: 20px;
+    }
+    /* ----- artitst------ */
+    img{
+        display:block;
+        width: 100%;
+        height: auto;
+        
+    }
+    .wrapper-left, .wrapper-right{
+        font-family: sans-serif;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .content{
+        white-space: nowrap;
+        position:absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 60px;
+        font-weight: 700;
+        overflow: hidden;
+        
+    }
+    .content span{
+        font-size: 24px;
+        display: block;
+    }
+    .overlay{
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        right: 100%;
+        width: 0;
+        height: 100%;
+        transition: .5s ease;
+        overflow: hidden;
+        z-index:3;
+    }
+    li.jyp{
+        color: #2A9BF3;
+    }
+    li.sm{
+        color: #D7304D; 
+    }
+    li.yg{
+        color: #000;
+    }
+    .overlay.jyp{
+        background-image: linear-gradient(to top, #2A9BF390, #2A9BF300);
+    }
+    
+    .overlay.sm{
+        background-image: linear-gradient(to top, #D7304D90, #D7304D00);
+    }
+    .overlay.yg{
+        background-image: linear-gradient(to top, #00000090, #00000000);
+    }
+    .wrapper-left:hover .overlay,
+    .wrapper-right:hover .overlay{
+        right: 0;
+        width: 100%;
+    }
+    /* End Artists description */
+
+    /* End Artists page */
+    footer{
+        position: absolute;
+        width: 100%;
+        height: 20vh;
+        display: grid;
+        grid-template-columns:repeat(12,auto);
+        align-self: center;
+        background-image: url(/img/home-text.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position-y: 45%;
+        background-color: transparent;
+        color: #fff;
+        -webkit-clip-path: polygon(100% 8%, 100% 100%, 0 100%, 0 0);
+        clip-path: polygon(100% 8%, 100% 100%, 0 100%, 0 0);
+    }
+    /* footer{
+        -webkit-clip-path: polygon(0 0, 0 59%, 100% 0);
+        clip-path: polygon(0 0, 0 59%, 100% 0);
+        background-color: #D7304D;
+        z-index: -2;
+    }  */
+    footer.bg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        -webkit-clip-path: polygon(0 0, 0 100%, 100% 0);
+        clip-path: polygon(0 0, 0 100%, 100% 0);
+        background-color: #f4537d;
+        z-index: 2;
+    }
+    footer div.logo{
+        z-index: 2;
+        position: relative;
+        width: 50px;
+        top: 25%;
+        margin: 0 auto;
+        grid-column: 12;
+    }
+
+    footer h5{
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+    }
+    
+    /*Texto typer home*/
+    #typer-size{
+        font-size: 48px;
+        margin: 0;
+        padding: 0;
+    }
+    #typed{
+        color: #D7304D;
+        font-size: 34px;
+        text-decoration: underline;
+        
+    }
+    /* end typer home */
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
