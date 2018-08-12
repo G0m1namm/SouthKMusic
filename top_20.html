@@ -1,0 +1,135 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>SouthKMusic</title>
+  <link rel="icon" href="favicon.png">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/icomoon/style.css">
+</head>
+
+<body id="top">
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  
+  <header>  
+    <div class="logotype">
+        <div class="logo">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+      <a href="index.html" class="blank">SOUTHKMUSIC</a>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html" class="blank">Inicio</a></li>
+        <li><a href="artistas.html" class="blank">Artistas</a></li>
+        <li><a href="#" class="blank">Top<strong class="pink">20</strong></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="artists-landing">
+    <div class="artists-content" id="top-content">
+        <!-- <h1 id="typer-size"></h1> -->
+        <section class="hero-bg hero-content neon-hero neon hero-header"  alt="Photo by Thiago Barletta on Unsplash">
+        <div class="hero-text">
+            <div class="title">TOP 20</div>
+        </div>
+    </div>
+  </div>
+  <div class="top-mid-container">
+        <div class="background"></div>
+        <div class="music-player">
+            <div class="details">
+                <div id="left-side">
+                    <span class="coverart">
+                        <img src="/img/songs/1.jpg"></img>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div><hr id="nine"></div>
+        <div id="right">
+            <div id="playlist">
+                <table id="playlist" class="no-select">
+                    <thead>
+                        <th></th>
+                        <th>Top</th>
+                        <th>Title</th>
+                        <th>Artist</th>
+                        <th>Album</th>
+                        <th>Duration</th>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            
+        </div>
+            
+        <section id="interactions">
+                <div class="tracking-wrap">
+                    <span class="song-current-time">--:--</span>
+                    <input class="tracking-slider range" type="range" min="0" value="0" step="1">
+                    <span class="song-length">--:--</span>
+                </div>
+            
+                <div class="controls-bar">
+                    <section id="controls">
+                        <span class="icon-all_inclusive shuffle"></span>
+                        <span class="icon-skip_previous previous"></span>
+                        <span class="icon-play_arrow play-pause"></span>
+                        <span class="icon-skip_next next"></span>
+                        <span class="icon-repeat repeat on"></span>
+                    </section>
+                    
+                    <div id="volume">
+                        <span class="icon-volume_down"></span>
+                        <input class="volume-slider range" type="range" max="1" min="0" step="0.01" value="0.8">
+                        <span class="icon-volume_up"></span>
+                    </div>
+                </div>
+            </section>
+                
+            <audio id="player"></audio>
+  </div>
+  <footer id="footer-top20">
+    <div class="bg"></div>
+    <h5>Copyright &copy;. Jherson Martelo - UPB</h5>
+    <div class="logo">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div> 
+    
+  </footer>
+  
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="js/vendor/typed.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/music_player.js"></script>
+  <script src="js/main.js"></script>
+  <!-- <script type="text/javascript">
+    var typed = new Typed('#typed',{
+    strings:["GIRLS' GENERATION","EXO","SEND NUDES","2NE1","iKON", "TWICE"],
+    loop: true,
+    typeSpeed:40,
+    backSpeed:40,
+    backDelay:1000,
+    });
+  </script> -->
+</body>
+
+</html>

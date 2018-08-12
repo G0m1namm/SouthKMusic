@@ -11,7 +11,7 @@ $(document).ready(function(){
 	
 	// Set height of wrapper on page load
 	tabWrapper.height(activeTabHeight);
-	
+
 	$(".tabs > li").on("click", function() {
 		
 		// Remove class from active tab
@@ -25,7 +25,19 @@ $(document).ready(function(){
 		
 		// fade out active tab
 		activeTab.fadeOut(250, function() {
+			//Add background image to each li
 			
+			$(".tabs > li.jyp").click(function(){
+				$(".artists-mid-container").css({"background":'url(/img/jyp/bg.png)',"background-attachment":'fixed',"background-size":'cover',"background-color":'#ccc'});
+			});
+		
+			$(".tabs > li.sm").click(function(){
+				$(".artists-mid-container").css({"background":'url(/img/sm/bg.jpg)',"background-attachment":'fixed',"background-size":'cover',"background-color":'#ccc'});
+			});
+
+			$(".tabs > li.yg").click(function(){
+				$(".artists-mid-container").css({"background":'url(/img/yg/bg.png)',"background-attachment":'fixed',"background-size":'cover',"background-color":'#ccc'});
+			});
 			// Remove active class all tabs
 			$(".tab__content > li").removeClass("active");
 			
@@ -37,7 +49,7 @@ $(document).ready(function(){
 			
 			// update new active tab
 			activeTab = $(".tab__content > .active");
-			
+
 			// Update variable
 			activeTabHeight = activeTab.outerHeight();
 			
@@ -50,6 +62,8 @@ $(document).ready(function(){
 				activeTab.delay(50).fadeIn(250);
 				
 			});
+			
+			
 		});
 	});
 });

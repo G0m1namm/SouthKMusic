@@ -105,6 +105,34 @@ textarea {
     .blank{
         color: #fff;
     }
+    .black{
+        color: #000;
+    }
+    .grape{
+        color: #CE92D8;
+    }
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: #E3E3E3;
+        border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb{
+        box-shadow: 2px 0 10px 0.2px black;
+        background: rgba(134, 121, 121, 0.582);
+        border-radius: 4px;
+    }
+    hr {
+        height: 1px;
+        background: white;
+        border: none;
+        outline: none;
+        margin: 3em 3em 5em;
+        position: relative;
+    }   
+          
+    
     @font-face{
         font-family: 'VarelaRound';
         src: url(/css/fonts/VarelaRound-Regular.otf);
@@ -138,6 +166,13 @@ textarea {
         background-size: cover;
         background-repeat: no-repeat;
     }
+    body#top{
+        background: url(/img/top-hero.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
       
     header{
         height: 100px;
@@ -161,6 +196,7 @@ textarea {
         font-size: 38px;
         letter-spacing: -3px;
         font-weight: 800;
+        margin-left: 16px;
         float: right;
         position: relative;
         text-align: center;
@@ -170,7 +206,7 @@ textarea {
     .logo {
         width: 50px;
         height: 50px;
-        margin-right: 2px;
+        margin-right: 5px;
       }
       .logo div {
         position: absolute;
@@ -263,7 +299,6 @@ textarea {
         margin-right: 24px;
     }
     .menu ul li a{
-        color:#fff;
         position: relative;
         display: inline-block;
         outline: none;
@@ -346,17 +381,18 @@ textarea {
     }
     .home-content{
         display: table-cell;
-        position: relative;
-        top: 25%;
-        margin-left: 28px;
+        position: absolute;
+        top: 40%;
+        left: 15%;
+        color: #CE92D8;
+        margin:0 auto;
         text-transform: uppercase;
-        float: left;
         text-align: center;
     }
     .home-content h1{
         padding: 0;
-        margin: 0;
-        font-size: 4.5em;
+        margin: 0 auto;
+        font-size: 5em;
         font-weight: 700;
     }
     .home-content span{
@@ -369,7 +405,9 @@ textarea {
         align-self: center;
         -webkit-clip-path: polygon(100% 16%, 100% 100%, 0 100%, 0 0);
         clip-path: polygon(100% 16%, 100% 100%, 0 100%, 0 0);
-        background-color: white;
+        background:url(/img/liquid-trip/png/bg-04.png);
+        background-size: cover;
+        background-repeat: no-repeat;
         /* -webkit-box-shadow: 0 8px 6px -6px inset black;
 	    -moz-box-shadow: 0 8px 6px -6px inset black;
         box-shadow: 0 8px 13px -7px inset black, 0 -8px 13px -7px inset black; */
@@ -431,11 +469,6 @@ textarea {
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto auto;
     }
-    /* .artists-landing{
-        -webkit-clip-path: polygon(50% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
-        clip-path: polygon(50% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
-    
-    } */
     .artists-landing::before,
     .artists-landing::after{
         position: absolute;
@@ -475,6 +508,15 @@ textarea {
                     1px 0px 0px white,
                     -1px 0px 2px rgba(0, 0, 0, .5);
     }
+    #top-content .hero-bg.neon-hero .title{
+        text-shadow: 0em 0em 3em #2A9BF3,
+                    0em 0em 2em #2A9BF3,
+                    1px 1px 5px #2A9BF3,
+                    0px 0px 15px #2A9BF3,
+                    1px 0px 0px white,
+                    -1px 0px 2px rgba(0, 0, 0, .5);
+    }
+
     .hero-bg.neon-hero .title:hover {
         color: #f4537d;
         text-shadow: 0em 0em 5em #D7304D,
@@ -484,6 +526,18 @@ textarea {
                     0px 0px 10px #D7304D,
                     0px 0px 25px #D7304D,
                     0px 0px 45px #D7304D,
+                    2px 1px 0px white,
+                    -1px 0px 2px rgba(0, 0, 0, .5);
+    }
+    #top-content .hero-bg.neon-hero .title:hover{
+        color: #2A9BF3;
+        text-shadow: 0em 0em 5em #2A9BF3,
+                    0em 0em 3em #2A9BF3,
+                    0em 0em 2em #2A9BF3,
+                    1px 1px 5px #2A9BF3,
+                    0px 0px 10px #2A9BF3,
+                    0px 0px 25px #2A9BF3,
+                    0px 0px 45px #2A9BF3,
                     2px 1px 0px white,
                     -1px 0px 2px rgba(0, 0, 0, .5);
     }
@@ -499,7 +553,8 @@ textarea {
     /* End CSS3 Neon Text Effect */
 
     /* Start Artists description */
-    .artists-mid-container{
+    .artists-mid-container,
+    .top-mid-container{
         max-width: 100%;
         padding-top: 150px;
         background-color: #ccc;
@@ -556,7 +611,7 @@ textarea {
     .tabs > li.active {
         color: #000; 
         background-color: #D7304D;
-
+        border-radius: 4px;
     }
     .tabs > li.active:before {
         transition-duration: 0.5s;
@@ -566,12 +621,15 @@ textarea {
     }
     .tabs > li:nth-child(1).active{
         background-color: #2A9BF3;
+        box-shadow: 0 1px 35px rgba(42, 155, 243, 0.5);
     }
     .tabs > li:nth-child(2).active{
         background-color: #D7304D;
+        box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
     }
     .tabs > li:nth-child(3).active{
         background-color: #000;
+        box-shadow: 0 2px 25px rgba(255, 255, 253, 0.5);
         color: white;
     }
     
@@ -668,8 +726,325 @@ textarea {
         width: 100%;
     }
     /* End Artists description */
-
     /* End Artists page */
+
+
+
+    /* Start top20 page */
+    .top-mid-container{
+        display: grid;
+        grid-template-columns: 25% 3px auto;
+        position: relative;
+        /* background-color: white; */
+        /* filter: blur(15px) grayscale(75%) opacity(20%); */
+    }
+    .background{
+        position: absolute;
+        background-image: url(/img/songs/1.jpg);
+        background-attachment: fixed;
+        background-size: 100%;
+        width: 99%;
+        height: 98%;
+        filter: blur(15px) grayscale(45%) opacity(70%);
+    }
+    .music-player {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        position: relative;
+        align-self: center;
+        margin: 0 auto;
+        z-index: 12;
+      }
+    hr#nine {
+        background-image:linear-gradient(to left, #3734db, #10d7af);
+        width:2px;
+        height:60vh;
+        box-shadow:2px 0 19px 2px #2A9BF3;
+        grid-column: 2;
+        margin: 0 auto;
+    }    
+    hr#nine::before {
+        border: 1px solid blue;
+        padding: 1em 1.25em;
+        border-radius: 50%;
+      
+    }
+      /* .background {
+        position: absolute;
+        background-image: url("https://goo.gl/rFEi0m");
+        background-size: 100%;
+        width: 99%;
+        height: 98%;
+        filter: blur(15px) grayscale(75%) opacity(20%);
+      } */
+      
+      .details {
+        padding: 2em;
+      }
+      
+      .details #left-side {
+        float: left;
+        width: 100%;
+      }
+      
+      .coverart img {
+        display: block;
+        width: 90%;  
+        margin: auto;
+        box-shadow: 0 3px 13px 2px rgb(119, 116, 116);
+        transition: width 0.3s ease;
+      }
+      .coverart img:hover{
+          width:100%;
+      }
+
+      div#right{
+          grid-column: 3;
+          margin-left: 10px;
+          position: relative;
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: auto auto;
+      }
+      .no-select {
+        -webkit-touch-callout: none;
+        /* iOS Safari */
+        -webkit-user-select: none;
+        /* Safari */
+        -khtml-user-select: none;
+        /* Konqueror HTML */
+        -moz-user-select: none;
+        /* Firefox */
+        -ms-user-select: none;
+        /* Internet Explorer/Edge */
+        user-select: none;
+      }
+
+      #playlist {
+        width: auto;
+        height: 63vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+      #playlist table {
+        width: 100%;
+        color: #fff;
+      }
+
+      #playlist table th,
+      #playlist table td {
+        padding: 5px 3%;
+        vertical-align: middle;
+        text-align: left;
+      }
+      #playlist table th {
+        color: rgb(241, 78, 105);
+        font-size: 1em;
+        padding-top: 15px;
+        cursor: default;
+      }
+      #playlist table tr {
+        cursor: pointer;
+      }
+      #playlist table th, td {
+        border-bottom: 1px groove rgba(129, 112, 112, 0.308);
+    }
+      #playlist table tr td.play-pause {
+        position: relative;
+        height: 30px;
+        width: 30px;
+      }
+      #playlist table tr td.play-pause:before {
+        position: absolute;
+        height: 25px;
+        content: url(/css/icomoon/PNG/play_circle_filled_white.png);
+        transform: scale(1.5);
+        justify-content: space-around;
+        top: 35%;
+        left: 37%;
+        z-index: 3;
+      }
+      #playlist table tr td.play-pause:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        content: "";
+        background: rgba(54, 55, 47, 0.432);
+      }
+      #playlist table tr td.play-pause:before, #playlist table tr td.play-pause:after {
+        visibility: hidden;
+      }
+      #playlist table tr td.play-pause img {
+        height: 50px;
+        width: 50px;
+      }
+      #playlist table tr td:nth-child(2) {
+        color: #F3F3F1;
+      }
+      #playlist table tr.playing td {
+        background: #1a1a16;
+        color: #5FBFA4;
+      }
+      #playlist table tr.playing td:nth-child(2) {
+        color: #A7DCCD;
+      }
+      #playlist table tr:hover td {
+        background: rgba(54, 55, 47, 0.336);
+      }
+      #playlist table tr:hover td.play-pause:before, #playlist table tr:hover td.play-pause:after {
+        visibility: visible;
+      }
+      
+      #interactions {
+        grid-column: 1/4;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #ddd;
+        width: 100%;
+        height: 10vh;
+        padding-top: 10px;
+        box-shadow: 0 -3px 10px 0 rgba(20, 21, 18, 0.3);
+      }
+      
+      .tracking-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .tracking-wrap .song-current-time {
+        text-align: right;
+        color: #000;
+      }
+      .tracking-wrap .song-length {
+        text-align: left;
+        color: #000;
+      }
+      .tracking-wrap .song-current-time,
+      .tracking-wrap .song-length {
+        width: 10vw;
+        font-family: 'VarelaRound';
+        letter-spacing: 1px;
+        font-size: 0.6em;
+      }
+      .tracking-slider{
+          border-radius: 5px;
+          box-shadow: 0 0 .4em #2A9BF3,
+                    0 0 .3em #2A9BF3,
+                    1px 1px 5px #2A9BF3,
+                    1px 0px 0px white,
+                    -1px 0px 2px rgba(0, 0, 0, .5);
+      }
+      .range {
+        clear: both;
+        -webkit-appearance: none;
+        background: #272822;
+        box-shadow: 0 0 .4em #2A9BF3,
+                    0 0 .3em #2A9BF3,
+                    1px 1px 5px #2A9BF3,
+                    1px 0px 0px white,
+                    -1px 0px 2px rgba(0, 0, 0, .5);
+        cursor: pointer;
+        height: 3px;
+        margin: 0;
+        vertical-align: bottom;
+        width: 76vw;
+        transition: height 0.2s ease;
+        transition-delay: 1s;
+      }
+      .range:focus {
+        outline: none;
+      }
+
+      .range:hover {
+        height: 7px;
+        transition: height 0.2s ease;
+      }
+      .range:hover::-webkit-slider-thumb {
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        transition: height 0.3s ease, width 0.3s ease;
+        transition-delay: 0;
+      }
+      .range::-webkit-slider-thumb {
+        width: 0;
+        height: 0;
+        -webkit-appearance: none;
+        background: #F3F3F1;
+        border-radius: 8px;
+        box-shadow: inset 0 0 0 5px #eaeaea;
+        transition: height 0.5s ease, width 0.5s ease;
+        transition-delay: 1s;
+      }
+      
+      .controls-bar {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      
+      #controls {
+        width: 80vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        color: #2A9BF3;
+      }
+      #controls > span {
+        transform: scale(1.5);
+        padding: 13px;
+        margin: 0 10px;
+        cursor: pointer;
+        transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      #controls > span.play-pause {
+        font-size: 1.1em;
+        padding: 10px;
+        padding-left: 1px;
+      }
+      
+      #controls > span:before {
+        transition: text-shadow 0.3s ease;
+      }
+      #controls > span.on {
+        color: #2A9BF3;
+        border-color: #2A9BF3;
+      }
+      #controls > span:hover {
+        color: #A7DCCD;
+        transform: scale(1.6);
+      }
+      #controls > span:hover:before {
+        text-shadow: 0 0 5px #F3F3F1;
+      }
+      #controls > span:hover.on {
+        color: #A7DCCD;
+        border-color: #2A9BF3;
+      }
+      
+      #volume {
+        max-width: 18vw;
+        padding: 0 5% 0 0;
+        display: flex;
+        align-items: center;
+        color:#2A9BF3;
+      }
+      #volume .icon-volume_down {
+        font-size: 1.1em;
+      }
+      #volume .icon-volume_up {
+        font-size: 1.1em;
+      }
+      #volume .volume-slider {
+        width: 10vw;
+        margin: 0 1vw;
+      }
+      
+    /* End top20 page */
     footer{
         position: absolute;
         width: 100%;
@@ -685,6 +1060,14 @@ textarea {
         color: #fff;
         -webkit-clip-path: polygon(100% 8%, 100% 100%, 0 100%, 0 0);
         clip-path: polygon(100% 8%, 100% 100%, 0 100%, 0 0);
+    }
+    footer#footer-top20{
+        height: 15vh;
+        background-image: url(/img/top-hero.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position-y: 45%;
+        background-color: transparent;
     }
     /* footer{
         -webkit-clip-path: polygon(0 0, 0 59%, 100% 0);
@@ -715,17 +1098,12 @@ textarea {
         text-align: center;
         justify-content: center;
         align-self: center;
+        grid-column: 1;
     }
-    
     /*Texto typer home*/
-    #typer-size{
-        font-size: 48px;
-        margin: 0;
-        padding: 0;
-    }
     #typed{
-        color: #D7304D;
-        font-size: 34px;
+        color: #f4537d;
+        font-size: 3em;
         text-decoration: underline;
         
     }
