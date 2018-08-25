@@ -135,11 +135,11 @@ textarea {
     
     @font-face{
         font-family: 'VarelaRound';
-        src: url(/css/fonts/VarelaRound-Regular.otf);
+        src: url(../css/fonts/VarelaRound-Regular.otf);
     }
     @font-face{
         font-family: 'Roboto';
-        src: url(/css/fonts/Roboto-Regular.ttf);
+        src: url(../css/fonts/Roboto-Regular.ttf);
     }
     *{
          
@@ -153,21 +153,21 @@ textarea {
         height: 100%;
     }
     body#home{
-        background: url(/img/home-landing.jpg);
+        background: url(../img/home-landing.jpg);
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
     }
     body#artists{
-        background: url(/img/home-text.jpg);
+        background: url(../img/home-text.jpg);
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
     }
     body#top{
-        background: url(/img/top-hero.jpg);
+        background: url(../img/top-hero.jpg);
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
@@ -236,7 +236,7 @@ textarea {
                 animation-name: rotate-3;
       }
       .logo div:nth-child(4) {
-        background: url(/img/logo.png) ;
+        background: url(../img/logo.png) ;
         background-size:contain;
         background-position-y: 2px;
       }
@@ -299,6 +299,7 @@ textarea {
         margin-right: 24px;
     }
     .menu ul li a{
+        color: #CEBBD8;
         position: relative;
         display: inline-block;
         outline: none;
@@ -405,7 +406,7 @@ textarea {
         align-self: center;
         -webkit-clip-path: polygon(100% 16%, 100% 100%, 0 100%, 0 0);
         clip-path: polygon(100% 16%, 100% 100%, 0 100%, 0 0);
-        background:url(/img/liquid-trip/png/bg-04.png);
+        background:url(../img/liquid-trip/png/bg-04.png);
         background-size: cover;
         background-repeat: no-repeat;
         /* -webkit-box-shadow: 0 8px 6px -6px inset black;
@@ -415,16 +416,16 @@ textarea {
     }
     .home-img-container{      
         align-self: center;
-        background: url(/img/img1-content.png);
+        background: url(../img/img1-content.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
         width: 80%;
         height: 80%;
         margin: 0 20px;
-        -webkit-box-shadow: 0 8px 6px -6px #D7304D;
-	    -moz-box-shadow: 0 8px 6px -6px #D7304D;
-        box-shadow: 0 18px 20px -7px #D7304D, 0 -3px 20px -7px #D7304D;
+        -webkit-box-shadow: 0 8px 6px -6px #7D24A6;
+	    -moz-box-shadow: 0 8px 6px -6px #7D24A6;
+        box-shadow: 0 18px 20px -7px #7D24A6, 0 -3px 20px -7px #7D24A6;
     }
     .home-description-container{
         align-self: center;
@@ -436,7 +437,7 @@ textarea {
         height: 80vh;
         display: grid;
         grid-template-columns: 50% auto;
-        background: url(/img/home-text.jpg);
+        background: url(../img/home-text.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -740,7 +741,7 @@ textarea {
     }
     .background{
         position: absolute;
-        background-image: url(/img/songs/1.jpg);
+        background-image: url(../img/songs/1.jpg);
         background-attachment: fixed;
         background-size: 100%;
         width: 99%;
@@ -769,15 +770,6 @@ textarea {
         border-radius: 50%;
       
     }
-      /* .background {
-        position: absolute;
-        background-image: url("https://goo.gl/rFEi0m");
-        background-size: 100%;
-        width: 99%;
-        height: 98%;
-        filter: blur(15px) grayscale(75%) opacity(20%);
-      } */
-      
       .details {
         padding: 2em;
       }
@@ -857,7 +849,7 @@ textarea {
       #playlist table tr td.play-pause:before {
         position: absolute;
         height: 25px;
-        content: url(/css/icomoon/PNG/play_circle_filled_white.png);
+        content: url(../css/icomoon/PNG/play_circle_filled_white.png);
         transform: scale(1.5);
         justify-content: space-around;
         top: 35%;
@@ -1052,7 +1044,7 @@ textarea {
         display: grid;
         grid-template-columns:repeat(12,auto);
         align-self: center;
-        background-image: url(/img/home-text.jpg);
+        background-image: url(../img/home-text.jpg);
         background-attachment: fixed;
         background-size: cover;
         background-position-y: 45%;
@@ -1063,7 +1055,7 @@ textarea {
     }
     footer#footer-top20{
         height: 15vh;
-        background-image: url(/img/top-hero.jpg);
+        background-image: url(../img/top-hero.jpg);
         background-attachment: fixed;
         background-size: cover;
         background-position-y: 45%;
@@ -1104,8 +1096,6 @@ textarea {
     #typed{
         color: #f4537d;
         font-size: 3em;
-        text-decoration: underline;
-        
     }
     /* end typer home */
 

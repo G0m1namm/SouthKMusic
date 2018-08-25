@@ -28,15 +28,15 @@ $(document).ready(function(){
 			//Add background image to each li
 			
 			$(".tabs > li.jyp").click(function(){
-				$(".artists-mid-container").css({"background":'url(/img/jyp/bg.png)',"background-attachment":'fixed',"background-size":'cover',"background-color":'#ccc'});
+				$(".artists-mid-container").css({"background":"url(../SouthKMusic/img/jyp/bg.png)","background-attachment":'fixed',"background-size":'cover',"background-color":'#ccc'});
 			});
 		
 			$(".tabs > li.sm").click(function(){
-				$(".artists-mid-container").css({"background":'url(/img/sm/bg.jpg)',"background-attachment":'fixed',"background-size":'cover',"background-color":'#ccc'});
+				$(".artists-mid-container").css({"background":'url(../SouthKMusic/img/sm/bg.jpg)',"background-attachment":'fixed',"background-size":'cover',"background-color":'#ccc'});
 			});
 
 			$(".tabs > li.yg").click(function(){
-				$(".artists-mid-container").css({"background":'url(/img/yg/bg.png)',"background-attachment":'fixed',"background-size":'cover',"background-color":'#ccc'});
+				$(".artists-mid-container").css({"background":'url(../SouthKMusic/img/yg/bg.png)',"background-attachment":'fixed',"background-size":'cover',"background-color":'#ccc'});
 			});
 			// Remove active class all tabs
 			$(".tab__content > li").removeClass("active");

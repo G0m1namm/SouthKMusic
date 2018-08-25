@@ -52,7 +52,7 @@ let listItems = document.querySelectorAll('#playlist tbdoy tr');
 const audio = document.getElementById('player');
 
 // Base route for archive url
-const archiveBase = '/audio';
+const archiveBase = '../SouthKMusic/audio';
 
 /**
  * A base list of songs and the meta data for them.
@@ -79,7 +79,7 @@ const songList = [
       album: {
         title: 'Airman Morning Diaries #4',
         art: {
-          square: '/img/songs/1.jpg'
+          square: '../SouthKMusic/img/songs/1.jpg'
         },
       },
       url: `${archiveBase}/1.mp3`,
@@ -91,7 +91,7 @@ const songList = [
       album: {
         title: '/// (너 먹구름 비)',
         art: {
-          square: '/img/songs/2.jpg'
+          square: '../SouthKMusic/img/songs/2.jpg'
         },
       },
       url: `${archiveBase}/2.mp3`,
@@ -103,7 +103,7 @@ const songList = [
       album: {
         title: 'THE SECOND MINI ALBUM `여보세요`',
         art: {
-          square: '/img/songs/3.jpg'
+          square: '../SouthKMusic/img/songs/3.jpg'
         },
       },
       url: `${archiveBase}/3.mp3`,
@@ -115,7 +115,7 @@ const songList = [
       album: {
         title: 'And July',
         art: {
-          square: '/img/songs/4.jpg'
+          square: '../SouthKMusic/img/songs/4.jpg'
           },
       },
       url: `${archiveBase}/4.mp3`,
@@ -127,7 +127,7 @@ const songList = [
       album: {
         title: '가을 안부',
         art: {
-          square: '/img/songs/5.jpg'
+          square: '../SouthKMusic/img/songs/5.jpg'
         },
       },
       url: `${archiveBase}/5.mp3`,
@@ -139,7 +139,7 @@ const songList = [
       album: {
         title: 'EVERYD4Y',
         art: {
-          square: '/img/songs/6.jpg'
+          square: '../SouthKMusic/img/songs/6.jpg'
         },
       },
       url: `${archiveBase}/6.mp3`,
@@ -151,7 +151,7 @@ const songList = [
       album: {
         title: '밤편지',
         art: {
-          square: '/img/songs/7.jpg'
+          square: '../SouthKMusic/img/songs/7.jpg'
         },
       },
       url: `${archiveBase}/7.mp3`,
@@ -163,7 +163,7 @@ const songList = [
       album: {
         title: '비',
         art: {
-          square: '/img/songs/8.jpg'
+          square: '../SouthKMusic/img/songs/8.jpg'
         },
       },
       url: `${archiveBase}/8.mp3`,
@@ -175,7 +175,7 @@ const songList = [
       album: {
         title: '그때 헤어지면 돼',
         art: {
-          square: '/img/songs/9.jpg'
+          square: '../SouthKMusic/img/songs/9.jpg'
         },
       },
       url: `${archiveBase}/9.mp3`,
@@ -187,7 +187,7 @@ const songList = [
       album: {
         title: 'No Brainer (Feat. Justin Bieber, Chance the Rapper & Quavo',
         art: {
-          square: '/img/songs/10.jpg'
+          square: '../SouthKMusic/img/songs/10.jpg'
         },
       },
       url: `${archiveBase}/10.mp3`,
@@ -199,7 +199,7 @@ const songList = [
       album: {
         title: '돌아오지마',
         art: {
-          square: '/img/songs/11.jpg'
+          square: '../SouthKMusic/img/songs/11.jpg'
         },
       },
       url: `${archiveBase}/11.mp3`,
@@ -211,7 +211,7 @@ const songList = [
       album: {
         title: '꽃 길',
         art: {
-          square: '/img/songs/12.jpg'
+          square: '../SouthKMusic/img/songs/12.jpg'
         },
       },
       url: `${archiveBase}/12.mp3`,
@@ -223,7 +223,7 @@ const songList = [
       album: {
         title: 'SEVENTEEN SPECIAL ALBUM `DIRECTOR`S CUT`',
         art: {
-          square: '/img/songs/13.jpg'
+          square: '../SouthKMusic/img/songs/13.jpg'
         },
       },
       url: `${archiveBase}/13.mp3`,
@@ -235,7 +235,7 @@ const songList = [
       album: {
         title: 'WHO, YOU',
         art: {
-          square: '/img/songs/14.jpg'
+          square: '../SouthKMusic/img/songs/14.jpg'
         },
       },
       url: `${archiveBase}/14.mp3`,
@@ -247,7 +247,7 @@ const songList = [
       album: {
         title: 'Hot Summer` f(x) 1st Album Repackage',
         art: {
-          square: '/img/songs/15.jpg'
+          square: '../SouthKMusic/img/songs/15.jpg'
         },
       },
       url: `${archiveBase}/15.mp3`,
@@ -259,7 +259,7 @@ const songList = [
       album: {
         title: '소나기 (Feat. 10cm)',
         art: {
-          square: '/img/songs/16.jpg'
+          square: '../SouthKMusic/img/songs/16.jpg'
         },
       },
       url: `${archiveBase}/16.mp3`,
@@ -271,7 +271,7 @@ const songList = [
       album: {
         title: '감아',
         art: {
-          square: '/img/songs/17.jpg'
+          square: '../SouthKMusic/img/songs/17.jpg'
         },
       },
       url: `${archiveBase}/17.mp3`,
@@ -283,7 +283,7 @@ const songList = [
       album: {
         title: 'SEVENTEEN 5TH MINI ALBUM `YOU MAKE MY DAY`',
         art: {
-          square: '/img/songs/18.jpg'
+          square: '../SouthKMusic/img/songs/18.jpg'
         },
       },
       url: `${archiveBase}/18.mp3`,
@@ -295,7 +295,7 @@ const songList = [
       album: {
         title: 'Evolve',
         art: {
-          square: '/img/songs/19.jpg'
+          square: '../SouthKMusic/img/songs/19.jpg'
         },
       },
       url: `${archiveBase}/19.mp3`,
@@ -307,7 +307,7 @@ const songList = [
       album: {
         title: 'Star',
         art: {
-          square: '/img/songs/20.jpg'
+          square: '../SouthKMusic/img/songs/20.jpg'
         },
       },
       url: `${archiveBase}/20.mp3`,
@@ -698,9 +698,9 @@ function buildPlaylist() {
     listItem.addEventListener('click', (event) => {
       const songIndex = event.target.parentElement.dataset.index;
       controls.updateSong(songIndex);
-      document.querySelectorAll('div.top-mid-container')[0].querySelector('div.background').style.backgroundImage="url(/img/songs/"+(parseInt(songIndex)+1)+".jpg)";
+      document.querySelectorAll('div.top-mid-container')[0].querySelector('div.background').style.backgroundImage="url(../SouthKMusic/img/songs/"+(parseInt(songIndex)+1)+".jpg)";
       // document.querySelectorAll('div.top-mid-container')[0].querySelector('div.background').style.backgroundImage="url(/img/songs/"+(parseInt(songIndex)+1)+".jpg)";
-      document.querySelectorAll('div.top-mid-container')[0].querySelector('div#left-side span.coverart img').setAttribute("src","/img/songs/"+(parseInt(songIndex)+1)+".jpg");
+      document.querySelectorAll('div.top-mid-container')[0].querySelector('div#left-side span.coverart img').setAttribute("src","../SouthKMusic/img/songs/"+(parseInt(songIndex)+1)+".jpg");
       if(listItem.getAttribute('data-index') == '7'){
         document.querySelectorAll('div.top-mid-container')[0].querySelector('div#playlist table#playlist').style.color="black";
       }
